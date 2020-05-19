@@ -1,0 +1,23 @@
+<hr>
+<hr>
+<hr>
+<form [formGroup]="GruopForm">
+    <div >
+        <h2>Add Todo</h2>
+            
+          <p *ngFor="let control of fields">
+            <mat-form-field appearance="outline">
+              <mat-label>{{control}}:</mat-label>
+              <input matInput placeholder="{{control}}" [formControlName]="control">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              
+            </mat-form-field>
+          </p>
+
+    </div>
+    
+    <button mat-stroked-button color="primary" (click)='addItem()'> Add </button>
+    <button mat-stroked-button color="warn" (click)='cancel()'> Cancel </button>
+    
+</form>
+

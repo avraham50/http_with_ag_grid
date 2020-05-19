@@ -1,1 +1,20 @@
-<p>comments works!</p>
+<ag-grid-angular
+    #agGrid
+    style="width: 100%; height: 50%;"
+    class="ag-theme-alpine"
+    [rowData]="rowData | async "
+    [columnDefs]="columnDefs"
+    rowSelection="multiple"
+    >
+    
+</ag-grid-angular>
+<hr>
+<hr>
+<hr>
+<section>
+    <button mat-stroked-button color="primary" [routerLink]="['new']" >Add Comment</button>
+    <button mat-stroked-button color="accent" (click)='navToedit()' >Edit Selcted Comments</button>
+    <button mat-stroked-button color="warn" (click)='delete()' >Delete Selcted Comments</button>
+</section>
+
+<router-outlet></router-outlet>

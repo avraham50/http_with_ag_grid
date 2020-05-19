@@ -38,6 +38,11 @@ export class BaseComponent implements OnInit {
 
 navToedit(){
       let selectedIds = this.getSelectedIds();
+
+      if (selectedIds.length == 0){
+        alert('No selected rows to delete!');
+        return
+      }
       this.router.navigate([this.endPoint,'edit', selectedIds.toString()],
       {queryParams: {selectedData :this.getSelectedRows(), selectedIds}})
 }

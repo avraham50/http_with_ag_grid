@@ -17,7 +17,7 @@ export class TodosComponent extends BaseComponent implements OnInit {
       public router: Router ) { 
       super(httpSvc, columnDefsSvc, router);
       this.endPoint = 'todos';
-      this.culumns = ['id', 'userId', 'title']
+      this.culumns = ['id', 'userId', 'title'];
   }
 
 

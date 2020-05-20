@@ -11,12 +11,7 @@ import { MatToolbarModule} from  '@angular/material/toolbar';
 import { MatIconModule} from  '@angular/material/icon'; 
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
-// <mat-form-field appearance="outline">
-// <mat-label>{{control}}:</mat-label>
-// <input matInput placeholder="control">
-// <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-// <mat-hint>Hint</mat-hint>
-// </mat-form-field>
+
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 // import {MatLabelModule} from '@angular/material/'

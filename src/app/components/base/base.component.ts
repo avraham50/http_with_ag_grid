@@ -40,11 +40,11 @@ navToedit(){
       let selectedIds = this.getSelectedIds();
 
       if (selectedIds.length == 0){
-        alert('No selected rows to delete!');
+        alert('No selected rows to update!');
         return
       }
       this.router.navigate([this.endPoint,'edit', selectedIds.toString()],
-      {queryParams: {selectedData :this.getSelectedRows(), selectedIds}})
+            {state: {selectedData :this.getSelectedRows(), selectedIds}})
 }
 
 delete(){

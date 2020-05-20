@@ -14,7 +14,7 @@ export class UserNewComponent extends BaseNewComponent implements OnInit {
   constructor(public fb:FormBuilder, public httpSvc:HttpService, public location: Location) { 
     super(fb, httpSvc, location);
     this.endPoint = 'users';
-    this.fields = [ 'name', 'username', 'email']
+    this.fields = [ 'name', 'username', 'email'];
   }
 
   ngOnInit(): void {

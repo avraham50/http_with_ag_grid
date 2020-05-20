@@ -17,7 +17,7 @@ export class PostsComponent extends BaseComponent implements OnInit {
       public router: Router ) { 
       super(httpSvc, columnDefsSvc, router);
       this.endPoint = 'posts';
-      this.culumns = ['id', 'userId', 'title', 'body']
+      this.culumns = ['id', 'userId', 'title', 'body'];
   }
 
 

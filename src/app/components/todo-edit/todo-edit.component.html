@@ -1,1 +1,33 @@
-<p>todo-edit works!</p>
+<div *ngFor="let group of ArrayForm.controls;index as i">
+
+
+    <hr>
+    <form [formGroup]="group">
+        <div >
+            <h2>Update</h2>
+                
+              <p *ngFor="let control of fields">
+                <mat-form-field appearance="outline">
+                  <mat-label>{{control}}:</mat-label>
+                  <input matInput placeholder="{{control}}" [formControlName]="control">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  
+                </mat-form-field>
+              </p>
+    
+        </div>
+        
+        <button mat-stroked-button color="primary" (click)='Update(i)'>  Update</button>
+        <!-- <button mat-stroked-button color="warn" (click)='cancel()'> Cancel </button> -->
+        
+    </form>
+    </div>
+    <section>
+        <hr>
+        <hr>
+        <hr>
+        <button mat-fab color="warn" aria-label="Example icon button with a delete icon"  (click)='cancel()' >
+            <mat-icon>delete</mat-icon>
+          </button>
+    </section>
+    

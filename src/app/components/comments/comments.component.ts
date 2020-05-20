@@ -17,7 +17,7 @@ export class CommentsComponent extends BaseComponent implements OnInit {
       public router: Router ) { 
       super(httpSvc, columnDefsSvc, router);
       this.endPoint = 'comments';
-      this.culumns = ['id', 'postId', 'body']
+      this.culumns = ['id', 'postId', 'body'];
 }
 
 

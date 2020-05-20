@@ -30,8 +30,12 @@ export class HttpService {
       
     }
 
+    putItem(endpoint: string, id, data:any){
+      return this.http.put<any>(this.api + endpoint + '/' + id, data,  httpOptions)
+    }
+
     deleteItem(endpoint, id):Observable<any>{
-      return this.http.delete<any>(this.api + endpoint + "/" + id)
+      return this.http.delete<any>(this.api + endpoint + "/" + id,  httpOptions)
     }
     
 }
